@@ -72,6 +72,7 @@ $(document).ready(function() {
 
 	// on click event to add crystal value to score
 	$(".crystal").on("click", function() {
+		$("#ding").prop("currentTime", 0);
 		ding.play();
 		switch ($(this).attr("id")) {
 			case "crystal-1":
