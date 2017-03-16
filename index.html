@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>Crystals Collector</title>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.js" defer></script>
+	<script type="text/javascript" src="assets/javascript/game.js" defer></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- favicon links -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+	
+	<h1 class="page-header text-center">Crystals Collector</h1>
+
+	<div class="container" id="content">
+
+		<!-- instructions -->
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2" id="instructions">
+				<p>You will be given a random number at the start of the game.</p>
+				<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+				<p>You win the game by matching your total score to a random number generated at the start of the game; you lose the game if your total score goes above the random number.</p>
+				<p>The value of each crystal is hidden from you until you click on it.</p>
+				<p>The values of the crystals change at the start of each game.</p>
+			</div>
+		</div>
+
+		<!-- stats row -->
+		<div class="row">
+			<div class="col-md-2 col-md-offset-3 col-xs-4 col-xs-offset-1 well">
+				
+				<p id="rndm-num">Target: ...</p>
+				<p id="score">Score: ...</p>
+
+			</div>
+			<div class="col-md-2 col-md-offset-2 col-xs-4 col-xs-offset-1 well">
+
+				<p id="wins">Wins: ...</p>
+				<p id="losses">Losses: ...</p>
+
+			</div>
+		</div>
+
+		<!-- crystals row -->
+		<div class="row" id="crystals">
+			<div class="col-md-2 col-md-offset-2 col-xs-3 crystal" id="crystal-1"><img src="assets/images/green-rupee.jpg" alt="green rupee"></div>
+			<div class="col-md-2  col-xs-3 crystal" id="crystal-2"><img src="assets/images/red-rupee.jpg" alt="red rupee"></div>
+			<div class="col-md-2  col-xs-3 crystal" id="crystal-3"><img src="assets/images/blue-rupee.jpg" alt="blue rupee"></div>
+			<div class="col-md-2  col-xs-3 crystal" id="crystal-4"><img src="assets/images/purple-rupee.jpg" alt="purple rupee"></div>
+		</div>
+
+	</div>
+
+	<!-- obnoxious theme music ftw -->
+	<div id="audio">
+		<audio id="ding" src="https://c2.rbxcdn.com/08992b6b00021958c1e1e4ec58f46f00"></audio>
+		<audio id="theme" src="https://c0.rbxcdn.com/7a1b6d3190e94c794a53a73a9cd5c238" volume="0.4" autoplay loop></audio>
+	</div>
+	
+</body>
+</html>

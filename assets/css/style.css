@@ -1,0 +1,20 @@
+html {
+	background: url(../images/zelda-bground.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+body {
+	color: #fff;
+	background: transparent;
+	
+}
+
+.crystal img {
+	height: 100%;
+	width: 100%;
+}
+
+.well {
+	color: #000;
+	background-color: #fff;
+}
